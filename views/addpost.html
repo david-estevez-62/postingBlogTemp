@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Blog Concept Template</title>
+		<link rel="stylesheet" href="/styles/styles.css">
+	</head>
+
+	<body>
+	<form action="/createpost" method="post" enctype="multipart/form-data">
+
+			Post Headline:
+			<input type="text" name="headline" placeholder="add a headline..." required="required" />
+
+			Post Content:
+			<textarea name="content" placeholder="add your content..." rows="10" cols="70" required="required"></textarea>
+
+			<input type="file" name="imgFile" accept="image/*" />
+
+		<input type="submit" value="Submit Post" />
+	</form>
+	</body>
+
+	<script src="/scripts/addpost.js"></script>
+
+</html>

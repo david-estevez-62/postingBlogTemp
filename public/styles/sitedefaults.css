@@ -1,0 +1,52 @@
+html, body {
+	height:100%;
+	width:100%;
+	background: rgb(241,241,241);
+  	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  	margin: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#postHolster {
+	margin-top: 50px;
+}
+
+#staticPostCont {
+	padding: 0px;
+	max-width:830px;
+	margin:0px auto;
+	list-style-type: none;
+}
+
+.post {
+	display: block;
+	max-width:830px;
+	min-height: 400px;
+	margin-bottom: 82px;
+	padding:30px;
+	background: white;
+}
+
+.postImg {
+	display:block;
+    margin:auto;
+    width:78%;
+}
+
+@media (max-width:970px) {
+  #staticPostCont {
+    margin:70px;
+  }
+}
+
+@media (max-width:670px) {
+  #staticPostCont {
+    margin:50px;
+  }
+  .postImg {
+    width: 99%;
+  }
+}

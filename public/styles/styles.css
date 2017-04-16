@@ -1,0 +1,17 @@
+body {
+	padding: 100px;
+}
+
+form {
+	margin-left: 100px;
+}
+
+input {
+	display:block;
+	margin: 10px 0 30px 0;
+}
+
+textarea {
+	display:block;
+	margin: 10px 0 30px 0;
+}

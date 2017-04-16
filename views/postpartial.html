@@ -1,0 +1,35 @@
+<div id="postHolster">
+	<ul id="staticPostCont"></ul>
+</div>
+
+
+<script type="text/x-handlebars-template" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js" id="postPartialTemp">
+	{{#if imageUrl}}
+		{{#if position.before}}
+		<li class="post">
+			<h1> {{ headline }} </h1>
+			{{#if imageUrl}}
+	    		<img src={{imageUrl}} alt={{imageDesc}} title={{imageDesc}} class="postImg" />
+	  		{{/if}}
+	  		<p> {{ content }} </p>
+			<span> {{ datetime }} </span>
+		</li>
+		{{else}} 
+		<li class="post">
+			<h1> {{ headline }} </h1>
+	  		<p> {{ content }} </p>
+	  		{{#if imageUrl}}
+	    		<img src={{imageUrl}} alt={{imageDesc}} title={{imageDesc}} class="postImg" />
+	  		{{/if}}
+			<span> {{ datetime }} </span>
+		</li>
+		{{/if}}
+	{{else}}
+		<li class="post">
+			<h1> {{ headline }} </h1>
+	  		<p>  {{ content }} </p>
+			<span> {{ datetime }} </span>
+		</li>
+	{{/if}}
+
+</script>
